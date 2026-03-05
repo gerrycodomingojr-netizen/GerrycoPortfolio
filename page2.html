@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Schedule - Gerryco's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e794e281d2.js" crossorigin="anonymous"></script>
+</head>
+<body id="mainBody">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Gerryco</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link" data-page="home">Home</a></li>
+                <li><a href="about_me.html" class="nav-link" data-page="about">About</a></li>
+                <li><a href="page2.html" class="nav-link" data-page="schedule">Schedule</a></li>
+                <li><a href="page3.html" class="nav-link" data-page="contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero hero-schedule">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <i class="fas fa-calendar-alt"></i> My School Schedule
+            </h1>
+            <p class="hero-subtitle">CGCA Cabuyao Campus - BS Computer Science</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Schedule Overview -->
+        <section class="section schedule-overview" data-section="schedule">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-clock"></i> Weekly Schedule
+                </h2>
+                <p class="schedule-intro">
+                    Below is my current semester schedule at Citi Global College, Cabuyao Campus. 
+                    I have a mix of online and face-to-face (F2F) classes throughout the week.
+                </p>
+            </div>
+
+            <!-- Days Grid -->
+            <div class="days-grid">
+                <!-- Sunday -->
+                <div class="day-card online-active" data-day="sunday">
+                    <div class="day-header">
+                        <i class="fas fa-sun"></i>
+                        <h3>Sunday</h3>
+                    </div>
+                    <div class="day-content">
+                        <div class="time-display">7 AM - 7 PM</div>
+                        <div class="class-status active">Active</div>
+                        <div class="class-type online">
+                            <i class="fas fa-desktop"></i>
+                            <span>Online Class</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monday -->
+                <div class="day-card no-class" data-day="monday">
+                    <div class="day-header">
+                        <i class="fas fa-moon"></i>
+                        <h3>Monday</h3>
+                    </div>
+                    <div class="day-content">
+                        <div class="no-classes-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="no-classes-text">No Classes</div>
+                        <p class="rest-day">Rest Day</p>
+                    </div>
+                </div>
+
+                <!-- Tuesday -->
+                <div class="day-card f2f-active" data-day="tuesday">
+                    <div class="day-header">
+                        <i class="fas fa-calendar-day"></i>
+                        <h3>Tuesday</h3>
+                    </div>
+                    <div class="day-content">
+                        <div class="time-display">3 PM - 5 PM</div>
+                        <div class="class-status active">Active</div>
+                        <div class="class-type f2f">
+                            <i class="fas fa-users"></i>
+                            <span>F2F Class</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wednesday -->
+                <div class="day-card no-class" data-day="wednesday">
+                    <div class="day-header">
+                        <i class="fas fa-calendar-day"></i>
+                        <h3>Wednesday</h3>
+                    </div>
+                    <div class="day-content">
+                        <div class="no-classes-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="no-classes-text">No Classes</div>
+                        <p class="rest-day">Rest Day</p>
+                    </div>
+                </div>
+
+                <!-- Thursday -->
+                <div class="day-card no-class" data-day="thursday">
+                    <div class="day-header">
+                        <i class="fas fa-calendar-day"></i>
+                        <h3>Thursday</h3>
+                    </div>
+                    <div class="day-content">
+                        <div class="no-classes-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="no-classes-text">No Classes</div>
+                        <p class="rest-day">Rest Day</p>
+                    </div>
+                </div>
+
+                <!-- Friday -->
+                <div class="day-card no-class" data-day="friday">
+                    <div class="day-header">
+                        <i class="fas fa-calendar-day"></i>
+                        <h3>Friday</h3>
+                    </div>
+                    <div class="day-content">
+                        <div class="no-classes-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="no-classes-text">No Classes</div>
+                        <p class="rest-day">Rest Day</p>
+                    </div>
+                </div>
+
+                <!-- Saturday -->
+                <div class="day-card f2f-active" data-day="saturday">
+                    <div class="day-header">
+                        <i class="fas fa-star"></i>
+                        <h3>Saturday</h3>
+                    </div>
+                    <div class="day-content">
+                        <div class="time-display">7 AM - 7 PM</div>
+                        <div class="class-status active">Active</div>
+                        <div class="class-type f2f">
+                            <i class="fas fa-users"></i>
+                            <span>F2F Class</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Legend Section -->
+        <section class="section schedule-legend" data-section="legend">
+            <h2 class="section-title">
+                <i class="fas fa-info-circle"></i> What Do These Mean?
+            </h2>
+            <div class="legend-grid">
+                <div class="legend-item online-item">
+                    <div class="legend-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="legend-text">
+                        <h4>Online Class</h4>
+                        <p>Classes conducted via online platform (Zoom, Teams, etc.)</p>
+                    </div>
+                </div>
+                <div class="legend-item f2f-item">
+                    <div class="legend-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="legend-text">
+                        <h4>Face-to-Face (F2F)</h4>
+                        <p>In-campus classes at Citi Global College, Cabuyao</p>
+                    </div>
+                </div>
+                <div class="legend-item rest-item">
+                    <div class="legend-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="legend-text">
+                        <h4>Rest Days</h4>
+                        <p>No scheduled classes - perfect for study or relaxation</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="section class-stats" data-section="stats">
+            <h2 class="section-title">
+                <i class="fas fa-chart-pie"></i> Weekly Statistics
+            </h2>
+            <div class="stats-grid">
+                <div class="stat-card" data-stat="total">
+                    <div class="stat-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="stat-content">
+                        <p class="stat-label">Total Classes</p>
+                        <h3 class="stat-number">3</h3>
+                        <small>Per Week</small>
+                    </div>
+                </div>
+                <div class="stat-card" data-stat="online">
+                    <div class="stat-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="stat-content">
+                        <p class="stat-label">Online Classes</p>
+                        <h3 class="stat-number">1</h3>
+                        <small>Class</small>
+                    </div>
+                </div>
+                <div class="stat-card" data-stat="f2f">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <p class="stat-label">F2F Classes</p>
+                        <h3 class="stat-number">2</h3>
+                        <small>Classes</small>
+                    </div>
+                </div>
+                <div class="stat-card" data-stat="rest">
+                    <div class="stat-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="stat-content">
+                        <p class="stat-label">Rest Days</p>
+                        <h3 class="stat-number">4</h3>
+                        <small>Days</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips Section -->
+        <section class="section tips-section" data-section="tips">
+            <h2 class="section-title">
+                <i class="fas fa-lightbulb"></i> Study Tips
+            </h2>
+            <div class="tips-grid">
+                <div class="tip-card" data-tip="1">
+                    <div class="tip-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Stay Organized</h3>
+                    <p>Keep track of all class schedules and assignment deadlines using a planner or digital calendar.</p>
+                </div>
+                <div class="tip-card" data-tip="2">
+                    <div class="tip-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Prepare in Advance</h3>
+                    <p>Review materials before each class to maximize learning and engagement.</p>
+                </div>
+                <div class="tip-card" data-tip="3">
+                    <div class="tip-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Participate Actively</h3>
+                    <p>Engage in both online and F2F classes to build connections and enhance understanding.</p>
+                </div>
+                <div class="tip-card" data-tip="4">
+                    <div class="tip-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3>Use Rest Days Wisely</h3>
+                    <p>Dedicate free time to coding practice, projects, and personal development.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Section -->
+        <section class="section navigation-section" data-section="nav">
+            <h2 class="section-title">
+                <i class="fas fa-map"></i> Continue Exploring
+            </h2>
+            <div class="navigation-grid">
+                <a href="index.html" class="nav-card" data-link="home">
+                    <i class="fas fa-home"></i>
+                    <h3>Home</h3>
+                    <p>Back to the main page</p>
+                </a>
+                <a href="about_me.html" class="nav-card" data-link="about">
+                    <i class="fas fa-user"></i>
+                    <h3>About Me</h3>
+                    <p>Learn more about me</p>
+                </a>
+                <a href="page3.html" class="nav-card" data-link="contact">
+                    <i class="fas fa-phone"></i>
+                    <h3>Contact</h3>
+                    <p>Get in touch with me</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pagination -->
+    <section class="pagination-section">
+        <div class="pagination">
+            <a href="about_me.html" class="pagination-btn prev" title="Previous page">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+            <a href="index.html" class="pagination-btn" data-page="1">1</a>
+            <a href="about_me.html" class="pagination-btn" data-page="2">2</a>
+            <a href="page2.html" class="pagination-btn active" data-page="3">3</a>
+            <a href="page3.html" class="pagination-btn" data-page="4">4</a>
+            <a href="page3.html" class="pagination-btn next" title="Next page">
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+        <span class="pagination-info">Page 3 of 4</span>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Gerryco's Portfolio</h3>
+                    <p>A showcase of my web development skills, education, and journey into tech.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about_me.html">About</a></li>
+                        <li><a href="page2.html">Schedule</a></li>
+                        <li><a href="page3.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Me</h4>
+                    <div class="footer-socials">
+                        <a href="https://www.instagram.com/geeeeerriiiikuuuuuuuuu/" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/gerryco.domingo.3" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="mailto:GerrycoDomingoJr@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <p class="footer-bottom">&copy; 2026 Gerryco Domingo Jr. All rights reserved. | Created with <i class="fas fa-heart"></i></p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" title="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Page Transition Overlay -->
+    <div class="page-transition"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
